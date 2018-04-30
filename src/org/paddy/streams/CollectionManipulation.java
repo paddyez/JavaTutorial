@@ -16,7 +16,7 @@ public class CollectionManipulation {
                 System.out.println(name);
             }
         }
-        System.out.println("Functional style 1:");
+        System.out.println("Annonymous inner classes:");
         names.stream()
                 .filter(new Predicate<String>() {
                     @Override
@@ -30,11 +30,11 @@ public class CollectionManipulation {
                         System.out.println(name);
                     }
                 });
-        System.out.println("Functional style lambda 2:");
+        System.out.println("Functional style lambda 1:");
         names.stream()
                 .filter(name -> !name.equals(exclude))
                 .forEach(name -> System.out.println(name));
-        System.out.println("Functional style lamda 3:");
+        System.out.println("Functional style lamda 2:");
         names.stream()
                 .filter(CollectionManipulation::isNotWalter)
                 .forEach(System.out::println);
