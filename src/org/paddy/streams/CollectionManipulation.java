@@ -18,7 +18,7 @@ public class CollectionManipulation {
      * Different ways to filter the names in the List
      */
     private void filterListByExclude() {
-        System.out.println("== Paradigm style ==\n");
+        System.out.println("== Imperative style ==\n");
         for(String name : names) {
             if(!name.equals(exclude)) {
                 System.out.println(name);
