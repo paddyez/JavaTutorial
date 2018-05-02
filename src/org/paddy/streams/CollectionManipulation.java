@@ -38,11 +38,11 @@ public class CollectionManipulation {
                         System.out.println(name);
                     }
                 });
-        System.out.println("== Functional style lambda 1 ==\n");
+        System.out.println("== Functional style lambda ==\n");
         names.stream()
                 .filter(name -> !name.equals(exclude))
                 .forEach(name -> System.out.println(name));
-        System.out.println("== Functional style lamda 2 ==\n");
+        System.out.println("== Functional style lamda method reference ==\n");
         names.stream()
                 .filter(CollectionManipulation::isNotWalter)
                 .forEach(System.out::println);
