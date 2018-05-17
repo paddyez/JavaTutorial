@@ -15,7 +15,7 @@ public class HTTP_Header {
             headerFields = connection.getHeaderFields();
             System.out.println("\n== Cookie ==\n");
             String result = headerFields.entrySet().stream()
-                    .filter(k -> k.getKey() != null && k.getKey().equals("Set-Cookie"))
+                    .filter(k -> k.getKey() != null && k.getKey().equalsIgnoreCase("Set-Cookie"))
                     .map(Map.Entry::getValue)
                     .flatMap(List::stream)
                     .collect(Collectors.joining(" "));
