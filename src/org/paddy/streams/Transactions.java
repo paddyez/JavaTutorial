@@ -29,18 +29,23 @@ public class Transactions {
                         .map(Transaction::getTransactionValue)
                         .collect(toList());
         System.out.println("Number of computer transactions: " + computerTransactionsValues.size());
+        double avrg = computerTransactionsValues.stream()
+                .mapToDouble(d -> d)
+                .average()
+                .orElse(Double.NaN);
         computerTransactionsValues.stream()
-                .map(value -> "Computer transaction cost: " + String.format(Locale.GERMAN, "%1$,.2f", value) + "\t€")
+                .map(value -> "Computer transaction cost: " +
+                        String.format(Locale.GERMAN, "%1$,.2f", value) + " €\tdeviation: " +
+                        String.format(Locale.GERMAN, "%1$,.2f", value - avrg) + " €")
                 .collect(toList())
                 .forEach(System.out::println);
         double sum = computerTransactionsValues.stream()
                 .mapToDouble(d -> d)
                 .sum();
-        System.out.println("----\nSum of all computer transactions:\t\t" + String.format(Locale.GERMAN, "%1$,.4f", sum) + " €");
-        double avrg = computerTransactionsValues.stream()
-                .mapToDouble(d -> d)
-                .average()
-                .orElse(Double.NaN);
+        for (int i = 0; i < 60; i++) {
+            System.out.print("_");
+        }
+        System.out.println("\nSum of all computer transactions:\t\t" + String.format(Locale.GERMAN, "%1$,.4f", sum) + " €");
         System.out.println("Average of all comouter transactions:\t" + String.format(Locale.GERMAN, "%1$,.4f", avrg) + " €");
     }
     private class Transaction {
