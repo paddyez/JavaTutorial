@@ -1,8 +1,8 @@
 package org.paddy.streams;
-import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.List;
+import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
+import java.util.stream.Collectors;
+
 import static java.util.stream.Collectors.toList;
 public class Transactions {
     public Transactions() {
@@ -12,18 +12,36 @@ public class Transactions {
             transaction = new Transaction(i,5);
             transactions.add(transaction);
         }
-        List<Integer> transactionsIds =
+        List<Integer> computerTransactionsIds =
                 transactions.stream()
                         .filter(t -> t.getTransactionType() == Transaction.COMPUTER)
                         .sorted(Comparator.comparing(Transaction::getTransactionValue).reversed())
                         .map(Transaction::getTransactionId)
                         .collect(toList());
-        System.out.println("Number of computer transactions: " + transactionsIds.size());
-        transactions.stream()
-                .filter(trans -> transactionsIds.contains(trans.getTransactionId()))
-                .map(Transaction::getTransactionValue)
+        String idsS = computerTransactionsIds.stream()
+                .map(i -> String.valueOf(i.intValue()))
+                .collect(Collectors.joining(", "));
+        System.out.println("Ids: " +idsS);
+        List<Double> computerTransactionsValues =
+                transactions.stream()
+                        .filter(t -> t.getTransactionType() == Transaction.COMPUTER)
+                        .sorted(Comparator.comparing(Transaction::getTransactionValue).reversed())
+                        .map(Transaction::getTransactionValue)
+                        .collect(toList());
+        System.out.println("Number of computer transactions: " + computerTransactionsValues.size());
+        computerTransactionsValues.stream()
+                .map(value -> "Computer transaction cost: " + String.format(Locale.GERMAN, "%1$,.2f", value) + "\t€")
                 .collect(toList())
                 .forEach(System.out::println);
+        double sum = computerTransactionsValues.stream()
+                .mapToDouble(d -> d)
+                .sum();
+        System.out.println("----\nSum of all computer transactions:\t\t" + String.format(Locale.GERMAN, "%1$,.4f", sum) + " €");
+        double avrg = computerTransactionsValues.stream()
+                .mapToDouble(d -> d)
+                .average()
+                .orElse(Double.NaN);
+        System.out.println("Average of all comouter transactions:\t" + String.format(Locale.GERMAN, "%1$,.4f", avrg) + " €");
     }
     private class Transaction {
         static final int GROCERY = 1;
