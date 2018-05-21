@@ -46,7 +46,7 @@ public class Transactions {
             System.out.print("_");
         }
         System.out.println("\nSum of all computer transactions:\t\t" + String.format(Locale.GERMAN, "%1$,.4f", sum) + " €");
-        System.out.println("Average of all comouter transactions:\t" + String.format(Locale.GERMAN, "%1$,.4f", avrg) + " €");
+        System.out.println("Average of all comouter transactions:\t" + String.format(Locale.GERMAN, "%1$,.4f", avrg) + " €\n");
     }
     private class Transaction {
         static final int GROCERY = 1;
