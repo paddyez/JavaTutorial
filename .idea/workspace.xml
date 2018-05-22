@@ -1,16 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="01666505-c08e-40df-816d-85970501f2f0" name="Default" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/src/org/paddy/generics/GenericTypes.java" afterDir="false" />
+    <list default="true" id="01666505-c08e-40df-816d-85970501f2f0" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTutorial/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTutorial/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/JavaTutorial/org/paddy/streams/CollectionManipulation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/paddy/http/HTTP_Header.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/paddy/http/HTTP_Header.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/org/paddy/streams/Transactions.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/org/paddy/streams/Transactions.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -37,8 +29,8 @@
       <file leaf-file-name="CollectionManipulation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/paddy/streams/CollectionManipulation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+            <state relative-caret-position="465">
+              <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -46,7 +38,7 @@
       <file leaf-file-name="HTTP_Header.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/org/paddy/http/HTTP_Header.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
+            <state relative-caret-position="375">
               <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -150,6 +142,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
@@ -158,30 +152,10 @@
               <item name="JavaTutorial" type="b2602c69:ProjectViewProjectNode" />
               <item name="JavaTutorial" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="JavaTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="paddy" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="JavaTutorial" type="b2602c69:ProjectViewProjectNode" />
-              <item name="JavaTutorial" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="paddy" type="462c0819:PsiDirectoryNode" />
-              <item name="generics" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -300,14 +274,21 @@
       <option name="project" value="LOCAL" />
       <updated>1526904234802</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Started generics">
+      <created>1526946164181</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1526946164181</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
     <option name="totallyTimeSpent" value="404000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1440" height="797" extended-state="6" />
+    <frame x="0" y="23" width="1440" height="797" extended-state="0" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -317,22 +298,22 @@
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2503458" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2503458" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.32918397" />
       <window_info anchor="bottom" id="Terminal" order="7" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47785977" visible="true" weight="0.15208334" />
-      <window_info id="Structure" order="1" sideWeight="0.5221402" side_tool="true" visible="true" weight="0.15208334" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.47302905" visible="true" weight="0.15208334" />
+      <window_info id="Structure" order="1" sideWeight="0.526971" side_tool="true" visible="true" weight="0.15208334" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Theme Preview" order="3" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Database" order="3" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -355,7 +336,8 @@
     <MESSAGE value="Some more advanced streaming" />
     <MESSAGE value="deviation" />
     <MESSAGE value="License and some info in readme" />
-    <option name="LAST_COMMIT_MESSAGE" value="License and some info in readme" />
+    <MESSAGE value="Started generics" />
+    <option name="LAST_COMMIT_MESSAGE" value="Started generics" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
@@ -622,14 +604,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/paddy/streams/CollectionManipulation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="383">
-          <caret line="38" column="5" lean-forward="true" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
+        <state relative-caret-position="465">
+          <caret line="38" column="5" selection-start-line="38" selection-start-column="5" selection-end-line="38" selection-end-column="5" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/org/paddy/http/HTTP_Header.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
+        <state relative-caret-position="375">
           <caret line="25" column="32" selection-start-line="25" selection-start-column="32" selection-end-line="25" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
